@@ -1,0 +1,128 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: content-box;
+}
+body {
+    font-family:"Montserrat","Poppins",sans-serif;
+    color:white;
+    background:linear-gradient(90deg,black ,rgb(147, 5, 5));
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    flex-wrap:wrap;
+    
+}
+h2 {
+    font-weight:400;
+    font-style: italic;
+    line-height: 1.8;
+}
+.container {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: 0 auto;
+    ;
+}
+.containerb{
+    top:350px;
+}
+.containerc{
+    top:600px;
+    
+}
+.containerd {
+    top:850px;
+}
+.containerc,.containerd,.containerb {
+    display:flex;
+    position:fixed;
+    background:linear-gradient(black,rgb(149, 28, 28),black);
+    border-radius: 0 1000px 0px 0;
+    left:0;
+    font-size:40px;
+    z-index:10;
+    animation: letraAnimation 5s ease-in-out forwards;
+    color:cyan;
+    padding-right:40px;
+    opacity: 0.8;
+}
+.sidebuttons {
+    font-family: "Comfortaa" "Montsterat";
+    letter-spacing: 5px;
+    
+}
+
+.t-image {
+    position: fixed;
+    top:0;
+    background-color: rgba(0, 0, 0,0.2); 
+    border-radius: 40px;
+    z-index:1000;
+}
+.content {
+    position:relative;
+    top:250px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:150px;
+    justify-content: flex-end;
+}
+.a{
+    object-fit: cover;
+    width:760px;
+    padding-right:30px;
+    border-radius: 120px;   
+}
+.proyectos {
+    position:relative;
+    top:250px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:200px;
+    justify-content: center;
+}
+.b{
+    width:100%
+}
+.divsobremi {
+    top:250px;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    font-family:"Poppins";
+    font-size:50px;
+    align-items:center;
+    justify-content:center;
+    gap:70px;
+    font-style: italic;
+    letter-spacing: 5px;
+    margin-bottom:80px;
+}
+
+.a-sidebutton {
+text-decoration: none;
+    color:inherit;
+}
+
+
+
+
+@keyframes letraAnimation {
+    0% {
+        opacity: 0; /* Fully transparent */
+        filter: blur(20px); /* Very blurry */
+    }
+    50% {
+        opacity: 0.5; /* Partially visible */
+        filter: blur(10px); /* Less blurry */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        filter: blur(0); /* No blur */
+    }
+}
